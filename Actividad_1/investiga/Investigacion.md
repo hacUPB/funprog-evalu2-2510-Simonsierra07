@@ -2,7 +2,7 @@ Actividad de investigación
 
 [Que es un computador](#Que_es_un_computador)
 
-[Arquitecturas de un computador](#Arquitecturas de un computador)
+[Arquitecturas de un computador](#Arquitecturas_de_un_computador)
 
 
 
