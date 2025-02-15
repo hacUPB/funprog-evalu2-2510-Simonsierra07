@@ -1,0 +1,3 @@
+El número binario es 1010101010. Para convertirlo a decimal, seguimos el método de multiplicar cada dígito por la potencia de 2 correspondiente, de derecha a izquierda.
+Sumamos todos los valores:
+512+128+32+8+2=682
