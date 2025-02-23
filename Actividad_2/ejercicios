@@ -1,0 +1,48 @@
+El número binario es 1010101010. Para convertirlo a decimal, seguimos el método de multiplicar cada dígito por la potencia de 2 correspondiente, de derecha a izquierda.
+Sumamos todos los valores:
+512+128+32+8+2=682
+
+
+
+
+
+
+### **Resumen de los tipos de datos en C, Java y Python**
+
+| **Lenguaje** | **Tipo de dato** | **Abreviación** | **Características**                                                                                                 |
+|--------------|------------------|-----------------|----------------------------------------------------------------------------------------------------------------------|
+| **C**        | Entero           | `int`           | Rango: -2,147,483,648 a 2,147,483,647 (4 bytes)                                                                      |
+|              | Flotante         | `float`         | Precisión de 6-7 dígitos (4 bytes)                                                                                   |
+|              | Doble precisión  | `double`        | Precisión de 15-16 dígitos (8 bytes)                                                                                 |
+|              | Carácter         | `char`          | Un solo carácter (1 byte)                                                                                            |
+|              | Booleano         | `bool`          | Valores: `true` o `false` (1 byte)                                                                                   |
+| **Java**     | Entero           | `int`           | Rango: -2,147,483,648 a 2,147,483,647 (4 bytes)                                                                      |
+|              | Flotante         | `float`         | Precisión de 6-7 dígitos (4 bytes)                                                                                   |
+|              | Doble precisión  | `double`        | Precisión de 15-16 dígitos (8 bytes)                                                                                 |
+|              | Carácter         | `char`          | Un solo carácter Unicode (2 bytes)                                                                                   |
+|              | Booleano         | `boolean`       | Valores: `true` o `false` (1 byte)                                                                                   |
+| **Python**   | Entero           | `int`           | Tamaño flexible (sin límite)                                                                                         |
+|              | Flotante         | `float`         | Precisión doble (8 bytes)                                                                                           |
+|              | Booleano         | `bool`          | Valores: `True` o `False` (1 byte)                                                                                   |
+|              | Cadena           | `str`           | Almacena texto (por carácter usa 1 byte)                                                                              |
+
+### **Cálculo de espacio en memoria**
+
+Para almacenar información cada 10 segundos durante 24 horas:
+
+1. **Datos a almacenar**:
+   - Identificador numérico (`int`): 4 bytes
+   - Temperatura (`float`): 4 bytes
+   - Valor lógico (`bool`): 1 byte
+   - Texto (10 caracteres): 10 bytes
+
+2. **Espacio por registro**: 4 + 4 + 1 + 10 = 19 bytes.
+
+3. **Número de registros**: 8640 registros (24 horas, cada 10 segundos).
+
+4. **Espacio total**:  
+   \[
+   8640 \times 19 = 164,160 \, \text{bytes} \approx 160.5 \, \text{KB}
+   \]
+
+**Resultado**: Se necesitan **164,160 bytes** o **160.5 KB** para almacenar la información durante 24 horas.
