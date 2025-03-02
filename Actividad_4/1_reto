@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float x1, y1, x2, y2, d;
+
+    // Leer las coordenadas de los dos puntos
+    printf("Ingrese las coordenadas del primer punto (x1, y1): ");
+    scanf("%f %f", &x1, &y1);
+    printf("Ingrese las coordenadas del segundo punto (x2, y2): ");
+    scanf("%f %f", &x2, &y2);
+
+    // Calcular la distancia
+    d = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+
+    // Imprimir el resultado
+    printf("La distancia entre los puntos es: %.2f\n", d);
+
+    return 0;
+}
