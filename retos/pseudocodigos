@@ -1,0 +1,217 @@
+
+### Ejercicio 1: Distancia entre dos puntos en el plano cartesiano
+
+#### Análisis:
+**Variables de Entrada:**
+- Coordenadas de los dos puntos: \( x_1, y_1 \) y \( x_2, y_2 \)
+
+**Variables de Salida:**
+- Distancia \( d \)
+
+**Constantes:**
+- Ninguna
+
+**Ecuación Involucrada:**
+- La fórmula para calcular la distancia entre dos puntos es:
+  \[
+  d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+  \]
+
+#### Enfoque Analítico:
+1. Se leen las coordenadas de los dos puntos.
+2. Se aplica la fórmula de la distancia para obtener el valor \( d \).
+3. Se imprime el valor de la distancia.
+
+#### Pseudocódigo:
+```plaintext
+Inicio
+  Leer x1, y1
+  Leer x2, y2
+  d = RaízCuadrada((x2 - x1)^2 + (y2 - y1)^2)
+  Imprimir d
+Fin
+```
+
+#### Diagrama de Flujo:
+1. Leer \( x_1, y_1, x_2, y_2 \)
+2. Calcular \( d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \)
+3. Imprimir el valor de \( d \)
+
+---
+
+### Ejercicio 2: Conversión de metros a pulgadas
+
+#### Análisis:
+**Variables de Entrada:**
+- Longitud en metros \( m \)
+
+**Variables de Salida:**
+- Longitud en pulgadas \( p \)
+
+**Constantes:**
+- 1 pulgada = 0.0254 metros
+
+**Ecuación Involucrada:**
+\[
+p = \frac{m}{0.0254}
+\]
+
+#### Enfoque Analítico:
+1. Se recibe el valor en metros.
+2. Se realiza la conversión utilizando la relación dada entre metros y pulgadas.
+3. Se imprime el valor en pulgadas.
+
+#### Pseudocódigo:
+```plaintext
+Inicio
+  Leer m
+  p = m / 0.0254
+  Imprimir p
+Fin
+```
+
+#### Diagrama de Flujo:
+1. Leer \( m \)
+2. Calcular \( p = \frac{m}{0.0254} \)
+3. Imprimir \( p \)
+
+---
+
+### Ejercicio 3: Determinación de la hipotenusa
+
+#### Análisis:
+**Variables de Entrada:**
+- Catetos \( A \) y \( B \)
+
+**Variables de Salida:**
+- Hipotenusa \( C \)
+
+**Constantes:**
+- Ninguna
+
+**Ecuación Involucrada:**
+\[
+C^2 = A^2 + B^2
+\]
+Para obtener \( C \), se toma la raíz cuadrada de la suma de los cuadrados de \( A \) y \( B \).
+
+#### Enfoque Analítico:
+1. Se leen los valores de los catetos \( A \) y \( B \).
+2. Se aplica la fórmula de Pitágoras.
+3. Se calcula la raíz cuadrada para obtener la hipotenusa.
+4. Se imprime el valor de la hipotenusa.
+
+#### Pseudocódigo:
+```plaintext
+Inicio
+  Leer A, B
+  C = RaízCuadrada(A^2 + B^2)
+  Imprimir C
+Fin
+```
+
+#### Diagrama de Flujo:
+1. Leer \( A, B \)
+2. Calcular \( C = \sqrt{A^2 + B^2} \)
+3. Imprimir \( C \)
+
+---
+
+### Ejercicio 4: Cálculo de la edad de una persona
+
+#### Análisis:
+**Variables de Entrada:**
+- Día, mes y año de nacimiento
+- Día, mes y año actuales
+
+**Variables de Salida:**
+- Edad de la persona
+- Si ya celebró el cumpleaños o no
+- Si hoy es su cumpleaños
+
+**Constantes:**
+- Ninguna
+
+**Ecuación Involucrada:**
+- La edad se calcula como:
+  \[
+  \text{Edad} = \text{Año actual} - \text{Año de nacimiento}
+  \]
+- Luego, se compara si la fecha actual ya pasó el cumpleaños o si es hoy.
+
+#### Enfoque Analítico:
+1. Leer las fechas de nacimiento y la fecha actual.
+2. Calcular la edad.
+3. Verificar si el cumpleaños ya ocurrió este año, si es hoy o si aún falta.
+4. Imprimir el mensaje correspondiente.
+
+#### Pseudocódigo:
+```plaintext
+Inicio
+  Leer día_nac, mes_nac, año_nac
+  Leer día_actual, mes_actual, año_actual
+  Edad = año_actual - año_nac
+  Si mes_actual < mes_nac o (mes_actual == mes_nac y día_actual < día_nac) entonces
+    Edad = Edad - 1
+  FinSi
+  Si día_actual == día_nac y mes_actual == mes_nac entonces
+    Imprimir "Feliz Cumpleaños"
+  FinSi
+  Imprimir Edad
+Fin
+```
+
+#### Diagrama de Flujo:
+1. Leer las fechas (nacimiento y actual).
+2. Calcular la edad.
+3. Comparar si el cumpleaños ya pasó o si es hoy.
+4. Imprimir el mensaje correspondiente o la edad.
+
+---
+
+### Ejercicio 5: Cálculo del sueldo semanal
+
+#### Análisis:
+**Variables de Entrada:**
+- Horas trabajadas
+- Pago por hora
+
+**Variables de Salida:**
+- Sueldo semanal
+
+**Constantes:**
+- Tarifa de pago normal y extra (doble/triple)
+
+**Ecuaciones Involucradas:**
+- Si se trabajan más de 40 horas:
+  - Entre la 41 y la 45, se paga el doble.
+  - Entre la 46 y la 50, se paga el triple.
+  
+#### Enfoque Analítico:
+1. Se reciben las horas trabajadas y el pago por hora.
+2. Se calcula el sueldo dependiendo de las horas trabajadas, aplicando los pagos extras cuando sea necesario.
+3. Se imprime el sueldo total.
+
+#### Pseudocódigo:
+```plaintext
+Inicio
+  Leer horas_trabajadas, pago_por_hora
+  Si horas_trabajadas <= 40 entonces
+    sueldo = horas_trabajadas * pago_por_hora
+  SinoSi horas_trabajadas <= 45 entonces
+    sueldo = (40 * pago_por_hora) + ((horas_trabajadas - 40) * 2 * pago_por_hora)
+  SinoSi horas_trabajadas <= 50 entonces
+    sueldo = (40 * pago_por_hora) + (5 * 2 * pago_por_hora) + ((horas_trabajadas - 45) * 3 * pago_por_hora)
+  FinSi
+  Imprimir sueldo
+Fin
+```
+
+#### Diagrama de Flujo:
+1. Leer horas trabajadas y pago por hora.
+2. Calcular el sueldo en función de las horas trabajadas, aplicando las tarifas extras.
+3. Imprimir el sueldo.
+
+---
+
+Si necesitas que continúe con los ejercicios restantes o ajustes en algún algoritmo, ¡avísame!
