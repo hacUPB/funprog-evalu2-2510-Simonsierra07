@@ -1,0 +1,52 @@
+ 
+1. Algoritmo para determinar el pago por lápices
+Pseudocódigo:
+
+Inicio
+    Leer cantidad_lapices
+    Si cantidad_lapices >= 1000 Entonces
+        precio_unitario = 85
+    Si no
+        precio_unitario = 90
+    Fin Si
+    total_pago = cantidad_lapices * precio_unitario
+    Mostrar total_pago
+Fin
+
+2. Algoritmo para calcular el precio final con descuento en el almacén de ropa
+Pseudocódigo:
+
+Inicio
+    Leer monto_compra
+    Si monto_compra > 250000 Entonces
+        descuento = monto_compra * 0.15
+    Si no
+        descuento = monto_compra * 0.08
+    Fin Si
+    precio_final = monto_compra - descuento
+    Mostrar precio_final
+    Mostrar descuento
+Fin
+
+3. Algoritmo para calcular el costo por alumno y el costo del servicio de la compañía de viajes
+Pseudocódigo:
+
+Inicio
+    Leer cantidad_alumnos
+    Si cantidad_alumnos >= 100 Entonces
+        costo_por_alumno = 65
+    Sino
+        Si cantidad_alumnos >= 50 Entonces
+            costo_por_alumno = 70
+        Si no
+            Si cantidad_alumnos >= 30 Entonces
+                costo_por_alumno = 95
+            Sino
+                costo_por_alumno = 4000 / cantidad_alumnos
+            Fin Si
+        Fin Si
+    Fin Si
+    total_pago = cantidad_alumnos * costo_por_alumno
+    Mostrar costo_por_alumno
+    Mostrar total_pago
+Fin

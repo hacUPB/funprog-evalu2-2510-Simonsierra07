@@ -1,0 +1,142 @@
+
+ Ejercicio 1: Distancia entre dos puntos en el plano cartesiano
+
+Inicio
+  Leer x1, y1
+  Leer x2, y2
+  d = RaízCuadrada((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1))
+  Escribir d
+Fin
+
+Ejercicio 2: Conversión de metros a pulgadas
+
+Inicio
+  Leer m
+  p = m / 0.0254
+  Escribir p
+Fin
+
+Ejercicio 3: Determinación de la hipotenusa
+
+Inicio
+  Leer A, B
+  C = sqrt(A*A + B*B)
+  Escribir C
+Fin
+
+Ejercicio 4: Cálculo de la edad de una persona
+
+Inicio
+  Leer día_nac, mes_nac, año_nac
+  Leer día, mes, año
+  Edad = año - año_nac
+  Si mes < mes_nac o (mes == mes_nac y día < día_nac) entonces
+    Edad = Edad - 1
+  Fin Si
+  Si día == día_nac y mes == mes_nac entonces
+    Escribir "Feliz Cumpleaños"
+  Fin Si
+  Escribir Edad
+Fin
+
+Ejercicio 5: Cálculo del sueldo semanal
+
+Inicio
+  Leer horas_trabajadas, pago_por_hora
+  Si horas_trabajadas <= 40 entonces
+    sueldo = horas_trabajadas * pago_por_hora
+  Si no Si horas_trabajadas <= 45 entonces
+    sueldo = (40 * pago_por_hora) + ((horas_trabajadas - 40) * 2 * pago_por_hora)
+  Si no Si horas_trabajadas <= 50 entonces
+    sueldo = (40 * pago_por_hora) + (5 * 2 * pago_por_hora) + ((horas_trabajadas - 45) * 3 * pago_por_hora)
+  Fin Si
+  Escribir sueldo
+Fin
+
+Ejercicio 6: Contar las cantidades (mayores, menores y cero)
+
+Inicio
+  Leer N
+  Cero = 0
+  Menores = 0
+  Mayores = 0
+  Para i = 1 hasta N hacer
+    Leer A_i
+    Si A_i == 0 entonces
+      Cero = Cero + 1
+    Si no Si A_i < 0 entonces
+      Menores = Menores + 1
+    Si no
+      Mayores = Mayores + 1
+    Fin Si
+  Fin Para
+  Escribir "Cero: ", Cero
+  Escribir "Menores a cero: ", Menores
+  Escribir "Mayores a cero: ", Mayores
+Fin
+
+Ejercicio 7: Ahorro diario y anual
+
+Inicio
+  AhorroDiario = 3 
+  AhorroAnual = 0
+  Para i = 1 hasta 365 hacer
+    AhorroAnual = AhorroAnual + AhorroDiario
+    AhorroDiario = AhorroDiario * 3 
+  Fin Para
+  AhorroAnual = AhorroAnual / 100  // Convertir a pesos
+  Escribir "Ahorro anual en pesos: ", AhorroAnual
+Fin
+
+Ejercicio 8: Descuentos por artículos
+
+Inicio
+  Leer N
+  Total = 0
+  Para i = 1 hasta N hacer
+    Leer P_i  
+    Si P_i >= 200 entonces
+      Descuento = P_i * 0.15
+    Si no Si P_i > 100 entonces
+      Descuento = P_i * 0.12
+    Si no
+      Descuento = P_i * 0.10
+    Fin Si
+    CostoFinal = P_i - Descuento
+    Total = Total + CostoFinal
+  Fin Para
+  Escribir "Costo total: ", Total
+Fin
+
+Ejercicio 9: Función exponencial
+
+Inicio
+  Leer x
+  e_x = 1
+  Termino = 1
+  Para n = 1 hasta 20 hacer  
+    Termino = Termino * x / n  
+    e_x = e_x + Termino  // Sumarlo al total
+  Fin Para
+  Escribir "e^x = ", e_x
+Fin
+
+
+Ejercicio 10: Cálculo del seno
+
+Inicio
+  Leer x
+  seno_x = x
+  Termino = x
+  Para n = 1 hasta 10 hacer 
+    Si n es impar entonces
+      Signo = -1
+    Si no
+      Signo = 1
+    Fin Si
+    Termino = Termino * x * x / ((2 * n) * (2 * n + 1))  
+    seno_x = seno_x + Signo * Termino  // Sumamos el término con el signo alterno
+  Fin Para
+  Escribir "Seno(x) = ", seno_x
+Fin
+

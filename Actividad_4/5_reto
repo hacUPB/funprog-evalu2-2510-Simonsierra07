@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int h;  // Horas trabajadas
+    float p, s;  // Pago por hora y sueldo semanal
+
+    // Leer horas trabajadas y pago por hora
+    printf("Ingrese las horas trabajadas: ");
+    scanf("%d", &h);
+    printf("Ingrese el pago por hora: ");
+    scanf("%f", &p);
+
+    // Calcular el sueldo
+    if (h <= 40) {
+        s = h * p;  // Pago
+    } else if (h <= 45) {
+        s = (40 * p) + ((h - 40) * 2 * p);  // Pago doble las horas extra
+    } else if (h <= 50) {
+        s = (40 * p) + (5 * 2 * p) + ((h - 45) * 3 * p);  // Pago triple las horas extra
+    } else {
+        printf("El número de horas trabajadas no es válido (no se permite trabajar más de 50 horas).\n");
+        return 1;  // Salir si las horas son mayores de 50
+    }
+
+    // Escribir el sueldo semanal
+    printf("El sueldo semanal es: %.2f\n", s);
+
+    return 0;
+}
+

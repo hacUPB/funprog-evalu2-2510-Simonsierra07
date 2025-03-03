@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float m, p;
+
+    // Leer los metros
+    printf("Ingrese la cantidad de metros: ");
+    scanf("%f", &m);
+
+    // Convertir metros a pulgadas
+    p = m / 0.0254;
+
+    // Imprimir el resultado
+    printf("La cantidad de pulgadas a pedir es: %.2f\n", p);
+
+    return 0;
+}

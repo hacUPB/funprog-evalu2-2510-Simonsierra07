@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int dia_nac, mes_nac, año_nac;
+    int dia, mes, año;
+    int edad;
+
+ 
+    printf("Ingrese la fecha de nacimiento (día mes año): ");
+    scanf("%d %d %d", &dia_nac, &mes_nac, &año_nac);
+    printf("Ingrese la fecha actual (día mes año): ");
+    scanf("%d %d %d", &dia, &mes, &año);
+
+    // Calcular la edad
+    edad = año - año_nac;
+    if (mes < mes_nac || (mes == mes_nac && dia < dia_nac)) {
+        edad--;  // Si no ha cumplido años este año
+    }
+
+
+    if (dia == dia_nac && mes == mes_nac) {
+        printf("¡Feliz cumpleaños!\n");
+    }
+
+ 
+    printf("La edad de la persona es: %d\n", edad);
+
+    return 0;
+}
+

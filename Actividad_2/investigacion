@@ -1,0 +1,20 @@
+1. Representación de datos en una computadora:
+   Las computadoras usan un sistema binario para representar todos los datos, utilizando solo dos valores: 0 y 1. Estos valores corresponden a encendido (1) o apagado (0) en términos eléctricos. Números, letras e imágenes se convierten en secuencias de estos 0 y 1. Por ejemplo, las letras se codifican con un sistema como ASCII, mientras que las imágenes se descomponen en píxeles, cada uno representado por valores binarios que indican su color.
+
+2. Conclusión sobre los estados representados por N variables binarias:
+   Si tenemos N variables binarias, cada una puede ser 0 o 1. Por lo tanto, el número de combinaciones posibles es \( 2^N \). Es decir, con más variables, las combinaciones crecen rápidamente. Por ejemplo, con 3 variables binarias, podemos tener 8 combinaciones posibles.
+
+3. Unidades de almacenamiento de datos:
+
+    Unidad          Prefijo   Equivalente  
+   ----------------------------------------
+    Byte                     8 bits        
+    KiloByte (KB)   Kilo     1,024 bytes   
+    MegaByte (MB)   Mega     1,024 KB      
+    GigaByte (GB)   Giga     1,024 MB      
+    TeraByte (TB)   Tera     1,024 GB      
+    PetaByte (PB)   Peta     1,024 TB      
+    ExaByte (EB)    Exa      1,024 PB      
+
+4. Importancia de George Boole:
+   George Boole fue clave para la computación, ya que su álgebra booleana permitió crear sistemas lógicos con solo dos valores (1 y 0). Esta teoría es la base de cómo las computadoras toman decisiones y procesan datos, haciendo posible la computación moderna tal como la conocemos.
